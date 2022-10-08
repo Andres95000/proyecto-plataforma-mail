@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AdminLTE 3 | Registration Page (v2)</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
+    />
+  </head>
+  <body class="hold-transition register-page">
+    <div class="register-box">
+      <div class="card card-outline card-primary">
+        <div class="card-header text-center">
+          <a href="../../index2.html" class="h1"><b>Admin</b>LTE</a>
+        </div>
+        <div class="card-body">
+          <p class="login-box-msg">Registro de nuevo usuario</p>
+          <form action="registrarUsuario" method="POST">
+            <div class="input-group mb-3">
+              <input type="text" name="txtnombre" class="form-control" placeholder="Nombres" />
+            </div>
+            <div class="input-group mb-3">
+              <input
+                type="email"
+                name="txtusuario2registro"
+                id="txtusuario2registro"
+                class="form-control"
+                placeholder="Correo"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <input
+                type="password"
+                name="txtpassregistro"
+                id="txtpassregistro"
+                class="form-control"
+                placeholder="Password"
+              />
+            </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                Registrarse
+              </button>
+            </div>
+          </form>
+          <a href="/login" class="text-center mb-3">Ya tengo una cuenta</a>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+  </body>
+</html>

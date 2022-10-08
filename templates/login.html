@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AdminLTE 3 | Log in (v2)</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
+    />
+  </head>
+  <body class="hold-transition login-page">
+    <div class="login-box">
+      <div class="card card-outline card-primary">
+        <div class="card-header text-center">
+          <a href="../../index2.html" class="h1"><b>Admin</b>LTE</a>
+          <div class="mt-3">
+            <div class="btn-group" role="group">
+              <div class="btn btn-primary">
+                <a href="/validacionCodigo " class="text-white">Validar codigo</a>
+              </div>
+              <div class="btn btn-primary">
+                <a href="/register" class="text-white">Nuevo usuario</a>
+              </div>
+            </div>
+              
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="login-box-msg">Iniciar sesión</p>
+          <form action="validarUsuario" method="POST">
+            <div class="input-group mb-3">
+              <input
+                type="email"
+                required
+                name="txtusuario"
+                id="txtusuario"
+                class="form-control"
+                placeholder="Email"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <input
+                type="password"
+                required
+                name="txtpass"
+                id="txtpass"
+                class="form-control"
+                placeholder="Password"
+              />
+                <button type="submit" class="btn btn-primary btn-block mt-3">
+                  iniciar sesión
+                </button>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+  </body>
+</html>
